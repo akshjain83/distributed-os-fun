@@ -1,0 +1,3 @@
+
+
+This repository focuses on the programming assignment and projects revolving around the distributed and operating system. The concepts involve semaphores, shared memory, network communication, operating system fundamentals, history, process and thread management, concurrency with semaphores and monitors, deadlocks, storage management, file systems, and I/O operations. The projects are implemented using the same for various problem statement and specification scenarios. 
