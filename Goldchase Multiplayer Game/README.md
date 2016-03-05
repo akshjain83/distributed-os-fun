@@ -7,7 +7,7 @@ This project uses of shared memory and semaphores to coordinate multiple process
 Rules
 
 1. Use h,j,k,and l to move the player left, down, up, and right respectively.
-2. If a player lands on top of a square containing gold, post a message declaring whether the player has found fool's gold or real gold.
+2. If a player lands on top of a square containing gold, post a message declaring whether the player has found fool's gold or real gold. Also disappear the gold from the map.
 3. A player may not move into a wall, or off the edge of the map. Silently ignore direction commands which attempt an illegal move.
 4. One player may move over/through another player.
 5. When a player who has found the real gold attempts to move off the map, he is declared winner--display a "You Won!" message. Note that in this first version, the other players won't know that a winner has been declared.
