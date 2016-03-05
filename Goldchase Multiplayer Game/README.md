@@ -5,8 +5,8 @@ This project uses of shared memory and semaphores to coordinate multiple process
 
 
 Rules
-1. Use h,j,k,and l to move the player left, down, up, and right respectively.
 
+1. Use h,j,k,and l to move the player left, down, up, and right respectively.
 2. If a player lands on top of a square containing gold, post a message declaring whether the player has found fool's gold or real gold.
 3. A player may not move into a wall, or off the edge of the map. Silently ignore direction commands which attempt an illegal move.
 4. One player may move over/through another player.
@@ -16,6 +16,7 @@ Rules
 
 
 Technical requirements and notes
+
 7. The map "drawn" beforehand in a text file using spaces and asterisks. The map is assumed
 to be a proper rectangle (no jagged edges). Ensure that you don't have trailing spaces!
 8. The first line of the map file is a number, n, representing n-1 fool's gold + 1 gold which must be randomly placed on the map when the map is created in memory.
