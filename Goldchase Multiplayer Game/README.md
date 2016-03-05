@@ -5,7 +5,8 @@ This project uses of shared memory and semaphores to coordinate multiple process
 
 
 Rules
-* Use h,j,k,and l to move the player left, down, up, and right respectively.
+1. Use h,j,k,and l to move the player left, down, up, and right respectively.
+
 2. If a player lands on top of a square containing gold, post a message declaring whether the player has found fool's gold or real gold.
 3. A player may not move into a wall, or off the edge of the map. Silently ignore direction commands which attempt an illegal move.
 4. One player may move over/through another player.
