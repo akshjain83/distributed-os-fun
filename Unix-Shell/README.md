@@ -1,12 +1,11 @@
 Citation - 
 
-1. University Of Colorado.
-2. [Bryan Dixon](http://www.bryancdixon.com/Spring2016/CSCI340) , CSU, Chico
+1. [Bryan Dixon](http://www.bryancdixon.com/Spring2016/CSCI340) , CSU, Chico
 
 
 #The Project
 
-Write you own Unix shell
+Write you own Unix shell ()
 
 The purpose of this assignment is to become more familiar with the concepts of process control and signal- ing, by writing a simple Unix shell program that supports job control.
 
@@ -18,6 +17,12 @@ Your tsh shell should have the following features:
 The prompt should be the string "tsh>" (do not include the quotation marks).
 The command line typed by the user should consist of a name and zero or more arguments, all separated by one or more spaces. If name is a built-in command, then tsh should handle it immediately and wait for the next command line. Otherwise, tsh should assume that name is the path of an executable file, which it loads and runs in the context of an initial child process (In this context, the term job refers to this initial child process).
 tsh need not support pipes ( | ) or I/O redirection (< and >).
+
+Unix shells also provide various built-in commands that support job control. For example:
+jobs: List the running and stopped background jobs.
+bg : Change a stopped background job to a running background job.
+fg : Change a stopped or running background job to a running in the foreground.
+kill : Terminate a job.
 
 Typing ctrl-c (ctrl-z) should cause a SIGINT (SIGTSTP) signal to be sent to the current foreground job, as well as any descendants of that job (e.g., any child processes that it forked). If there is no foreground job, then the signal should have no effect.
 If the command line ends with an ampersand &, then tsh should run the job in the background. Otherwise, it should run the job in the foreground.
@@ -37,3 +42,12 @@ The fg command restarts by sending it a SIGCONT signal, and then runs it in the 
 tsh should reap all of its zombie children. 
 
 If any job terminates because it receives a signal that it didn’t catch, then tsh should recognize this event and print a message with the job’s PID and a description of the offending signal.
+
+* Reference solution. 
+The Linux executable tshref is the reference solution for the shell.
+
+* Traces 01 - 16
+They are the sample input files to test the Unix shell written(in tsh.c).
+
+* Shell driver. 
+The sdriver.pl program executes a shell as a child process, sends it commands and signals as directed by a trace file, and captures and displays the output from the shell.
