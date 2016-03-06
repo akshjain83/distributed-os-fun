@@ -1,3 +1,8 @@
+Citation - 
+
+1. [Bryan Dixon](http://www.bryancdixon.com/Spring2016/CSCI340) , CSU, Chico
+
+
 There are two main ways to add code to the Linux kernel. One way is to choose or add code to compile into the kernel during the compilation process. The other method is to add the code to the Linux kernel while it is running, which is what a loadable kernel module is.
 
 For this assignment you will be doing the following:
